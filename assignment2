@@ -1,0 +1,14 @@
+import random 
+
+number = random.randint(1,10)
+guess = int(input("guess a number between 1 and 10: "))
+
+while guess != number:
+    if guess <number:
+        print("you need to guess higher. Please try again")
+        guess = int(input("\nguess a number between 1 and 10: "))
+    else:
+        print("you need to guess lower. Please Try again")
+        guess = int(input("/nguess a number between 1 and 10: "))
+
+    print("you have guessed the right number yay!")
